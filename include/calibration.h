@@ -2,7 +2,7 @@
 *
 *  MIT License
 *
-*  Copyright (c) 2023 awawa-dev
+*  Copyright (c) 2023-2025 awawa-dev
 *
 *  https://github.com/awawa-dev/HyperSerialPico
 *
@@ -35,6 +35,8 @@
 	#endif
 #elif SPILED_APA102
 	typedef ColorDotstartBgr ColorDefinition;
+#elif SPILED_WS2801
+	typedef ColorRgb ColorDefinition;
 #endif
 
 

@@ -2,7 +2,7 @@
 *
 *  MIT License
 *
-*  Copyright (c) 2023 awawa-dev
+*  Copyright (c) 2023-2025 awawa-dev
 *
 *  https://github.com/awawa-dev/HyperSerialPico
 *
@@ -67,6 +67,7 @@ class
 	uint16_t fletcher2 = 0;
 	uint16_t fletcherExt = 0;
 	uint8_t position = 0;
+	bool regroup = false;
 
 	public:
 		ColorDefinition color;
@@ -210,6 +211,16 @@ class
 			fletcher1 = (fletcher1 + (uint16_t)input) % 255;
 			fletcher2 = (fletcher2 + fletcher1) % 255;
 			fletcherExt = (fletcherExt + (input ^ (position++))) % 255;
+		}
+
+		void setRegroup(bool newValue)
+		{
+			regroup = newValue;
+		}
+
+		bool getRegroup()
+		{
+			return regroup;
 		}
 
 		/**

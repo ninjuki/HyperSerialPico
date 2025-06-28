@@ -29,7 +29,7 @@
 #define MAIN_H
 
 #define MAX_BUFFER (3013 * 3 + 1)
-#define HELLO_MESSAGE "\r\nWelcome!\r\nAwa driver 9. Ninjuki (SECOND_SEGMENT_INDEX 136 SECOND_SEGMENT_REVERSED ON)\r\n"
+#define HELLO_MESSAGE "\r\nWelcome!\r\nAwa driver 9. Ninjuki (SECOND_SEGMENT_INDEX 102 SECOND_SEGMENT_REVERSED ON)\r\n"
 
 #include "calibration.h"
 #include "statistics.h"
